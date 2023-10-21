@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Blogr]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      * {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+
+      :root {
+        --veryLightRed: hsl(13, 100%, 72%);
+        --lightRed: hsl(353, 100%, 62%);
+        --veryLightRed: hsl(355, 100%, 74%);
+        --textWhite: hsl(0, 0%, 100%);
+        --grayishBlue: hsl(240, 2%, 79%);
+        --grayishBlue2: hsl(237, 23%, 32%);
+      }
+
+      header {
+        color: var(--textWhite);
+        height: 90vh;
+        background-color: var(--lightRed);
+        background-image: url(./images/bg-pattern-intro-desktop.svg), radial-gradient(var(--lightRed), var(--veryLightRed));
+        background-size: 210%;
+        background-position: calc(200vw - 20vw);
+        border-bottom-left-radius: 100px;
+        padding: 0 8rem 0 8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 1.5rem 0 1.5rem 0;
+        align-items: center;
+      }
+
+      header > p {
+        color: var(--grayishBlue2);
+        margin: 23px;
+      }
+
+      nav ul, nav div {
+        display: flex;
+        align-items: center;
+      }
+      nav div > ul {
+        display: flex;
+
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 12px;
+      }
+
+      nav ul ul {
+        display: none;
+      }
+
+      .hero-btn-bar .learn-more {
+        border: none;
+        background-color: transparent;
+        border: 1px solid var(--textWhite);
+        color: var(--textWhite);
+      }
+     
+      .no-btn-border {
+        border: none;
+      }
+     
+      .cta {
+        border-radius: 20px;
+        padding: 1rem 1.6rem 1rem 1.6rem;
+        background-color: var(--textWhite);
+        color: var(--veryLightRed);
+        font-weight: 600;
+      }
+
+      .cta:hover {
+        background-color: var(--veryLightRed);
+        color: var(--textWhite);
+        cursor: pointer;
+      }
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      .hero-btn-bar {
+        display: flex;
+      }
+
+      .hero-btn-bar > * {
+        margin: 12px;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+        <img src="./images/logo.svg" alt="Logo" />
+
+        <ul>
+          <li>
+            Product
+            <ul>
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integrations</li>
+            </ul>
+          </li>
+
+          <li>
+            Company
+            <ul>
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+          </li>
+          <li>
+            Connect
+            <ul>
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+        <ul>
+          <li>Login</li>
+          <li class="cta">Sign Up</li>
+        </ul>
+      </nav>
+
+        <h1>A modern publishing platform</h1>
+
+        <p>Grow your audience and build your online brand</p>
+
+        <div class="hero-btn-bar">
+        <button class="cta no-btn-border">Start for Free</button>
+        <button class="cta learn-more">Learn More</button>
+      </div>
+      
+    </header>
+    <main>
+      <section>
+    <h2>Designed for the future </h2>
+    <h3>Introducing an extensible editor </h3>
+    
+    <p>Blogr features an
+    exceedingly intuitive interface which lets you focus on one thing: creating
+    content. The editor supports management of multiple blogs and allows easy
+    manipulation of embeds such as images, videos, and Markdown. Extensibility
+    with plugins and themes provide easy ways to add functionality or change the
+    looks of a blog. </p>
+    
+    <h3>Robust content management </h3>
+    <p>Flexible content management
+    enables users to easily move through posts. Increase the usability of your
+    blog by adding customized categories, sections, format, or flow. With this
+    functionality, you’re in full control. </p>
+  </section>
+
+  <section>
+    <h2></h2>
+    State of the Art Infrastructure With
+    reliability and speed in mind, worldwide data centers provide the backbone
+    for ultra-fast connectivity. This ensures your site will load instantly, no
+    matter where your readers are, keeping your site competitive. 
+  </section>
+
+  <section>
+    <h2>Free, open,
+    simple</h2>
+    <p>Blogr is a free and open source application backed by a large
+    community of helpful developers. It supports features such as code syntax
+    highlighting, RSS feeds, social media integration, third-party commenting
+    tools, and works seamlessly with Google Analytics. The architecture is clean
+    and is relatively easy to learn.
+  </p> 
+  
+  <h2>Powerful tooling </h2>
+  
+  <p>Batteries included. We
+    built a simple and straightforward CLI tool that makes customization and
+    deployment a breeze, but capable of producing even the most complicated
+    sites. </p>
+  </section>
+</main>
+
+<footer>
+    Product Overview Pricing Marketplace Features Integrations Company
+    About Team Blog Careers Connect Contact Newsletter LinkedIn
+  </footer>
+
+
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Peter Aren Gambo</a>.
+    </div>
+  </body>
+</html>
